@@ -3,7 +3,7 @@ name = "wod_challenge"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10" # py32 doesn't work due to constraint in waymo_open_dataset package
 dependencies = [
     "torch>=2.10.0",
 ]
@@ -11,3 +11,9 @@ dependencies = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "altair>=6.0.0",
+    "notebook>=7.5.3",
+]
