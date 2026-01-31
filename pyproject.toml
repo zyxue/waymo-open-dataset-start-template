@@ -40,6 +40,7 @@ build-backend = "hatchling.build"
 dev = [
     "black>=26.1.0",
     "jupyter>=1.1.1",
-     # ipython<8.13, to prevent dep on typing_extensions.TypeAliasType, which isn't available till typing-extensions-4.6.0, tensorflow=2.13 requires <4.6.0
+    # ipython<8.13, to prevent dep on typing_extensions.TypeAliasType, which isn't available till typing-extensions-4.6.0, tensorflow=2.13 requires <4.6.0
     "ipython<8.13",
+    "isort>=7.0.0",
 ]
