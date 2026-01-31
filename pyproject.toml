@@ -3,7 +3,7 @@ name = "wod_challenge"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10" # py32 doesn't work due to constraint in waymo_open_dataset package
+requires-python = ">=3.10" # py312 doesn't work due to constraint in waymo_open_dataset package
 dependencies = [
     # Don't change these deps as they're used by waymo_open_dataset.
     "absl-py==1.4.0",
@@ -26,6 +26,7 @@ dependencies = [
     "tensorflow_probability==0.21.0",
     "visu3d==1.5.1",
     "dacite==1.8.1",
+    # Add custom packages below with `uv add <pkg>`
 ]
 
 [build-system]
