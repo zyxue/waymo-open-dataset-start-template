@@ -26,10 +26,6 @@ dependencies = [
     "tensorflow_probability==0.21.0",
     "visu3d==1.5.1",
     "dacite==1.8.1",
-    # Add your custom packages here
-    "torch>=2.1.2",
-    "altair>=5.3.0",
-    "opencv-python>=4.8.1.78",
 ]
 
 [build-system]
