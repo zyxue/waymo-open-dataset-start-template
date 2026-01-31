@@ -28,6 +28,7 @@ dependencies = [
     "dacite==1.8.1",
     # Add your custom packages here
     "torch>=2.1.2",
+    "altair>=5.3.0",
 ]
 
 [build-system]
@@ -36,5 +37,8 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
-    "notebook>=7.5.3",
+    "black>=26.1.0",
+    "jupyter>=1.1.1",
+     # ipython<8.13, to prevent dep on typing_extensions.TypeAliasType, which isn't available till typing-extensions-4.6.0, tensorflow=2.13 requires <4.6.0
+    "ipython<8.13",
 ]
