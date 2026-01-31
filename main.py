@@ -9,9 +9,9 @@ def main():
         ),
         compression_type="",
     ).as_numpy_iterator():
-        frame = wod_e2ed_pb2.E2EDFrame()
-        frame.ParseFromString(datum)
-        print(frame)
+        e2ed_frame = wod_e2ed_pb2.E2EDFrame()
+        e2ed_frame.ParseFromString(datum)
+        print(f"{e2ed_frame.frame.context.name=:}")
         break
 
 
